@@ -48,6 +48,12 @@ var app = {
             subscribe_key : "demo"
         });
 
+        pubnub.publish({
+            channel     : "hello_phonegap_world",
+            message     : "hi how r u",
+            callback    : success
+        })
+
         pubnub.susbcribe({
             channel     : "hello_phonegap_world",
             callback    : success,
