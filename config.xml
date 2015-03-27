@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pubnub.phonegapsimpledemo" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PhonegapSimpleDemo</name>
+    <description>
+        A sample Apache Cordova application that subscribes to a channel using Pubnub
+    </description>
+    <author email="stephen@pubnub.com" href="http://cordova.io">
+        Pubnub Inc.
+    </author>
+    <gap:plugin name="com.pubnub.cordova.pubnub" version="3.7.10" />
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
