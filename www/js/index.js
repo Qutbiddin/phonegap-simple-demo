@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        alert('DEVICE READY');
+
         var success = function(message) {
             alert(JSON.stringify(message));
         }
@@ -48,13 +48,7 @@ var app = {
             subscribe_key : "demo"
         });
 
-        pubnub.publish({
-            channel     : "hello_phonegap_world",
-            message     : "hi how r u",
-            callback    : success
-        })
-
-        pubnub.susbcribe({
+        pubnub.subscribe({
             channel     : "hello_phonegap_world",
             callback    : success,
             error       : success,
