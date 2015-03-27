@@ -34,8 +34,9 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        alert('DEVICE READY');
         var success = function(message) {
-            alert(message);
+            alert(JSON.stringify(message));
         }
 
         var failure = function() {
